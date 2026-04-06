@@ -51,16 +51,18 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 ---
 
 ## 📂 Project Structure
-├── index.html # Homepage with cake navigation
-├── products.html # Pre-made cakes and pastries
-├── custom.html # Custom cake builder
-├── cart.html # Cart page
-├── checkout.html # Checkout page
+
+.
+├── index.html          # Homepage with cake navigation
+├── products.html       # Pre-made cakes and pastries
+├── custom.html         # Custom cake builder
+├── cart.html           # Cart page
+├── checkout.html       # Checkout page
 ├── css/
-│ └── style.css # Styling
+│   └── style.css       # Styling
 ├── js/
-│ └── script.js # Main JavaScript logic
-├── images/ # Images for cakes, UI, etc.
+│   └── script.js       # Main JavaScript logic
+└── images/             # Images for cakes, UI, etc.
 
 
 
