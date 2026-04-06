@@ -70,7 +70,7 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 
 ## 🚀 How to Run the Project
 
-1. Download or clone the repository: https://github.com/Aasim-6232/Bakery-Ordering-UI-Cakes-Pastries-
+1. Download or clone the repository: https://github.com/Aasim-6232/Bakery-Ordering-UI-Cakes-Pastries
 
 2. Open the project folder
 
