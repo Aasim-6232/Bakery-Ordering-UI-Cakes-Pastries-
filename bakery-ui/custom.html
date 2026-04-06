@@ -1,0 +1,175 @@
+<!-- custom.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Cake | Sweet Cravings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+<header>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <h2 class="logo">Sweet Cravings</h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Pre-Made Cakes</a></li>
+        <li><a href="custom.html">Custom Cake</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="content">
+
+<section class="page-header">
+  <div class="container">
+    <h1>Design Your Custom Cake</h1>
+    <p>Create a cake just the way you like it!</p>
+  </div>
+</section>
+
+<section class="custom-cake-section">
+  <div class="container custom-cake-grid">
+
+    <!-- FORM -->
+    <form class="cake-form">
+      
+      <div class="form-group">
+        <label>
+          Cake Type
+          <span class="tooltip">?
+            <span class="tooltip-text">
+              Eggless cakes are suitable for vegetarians and slightly sweeter.
+            </span>
+          </span>
+        </label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="cake-type" value="egg" checked>
+            With Egg
+          </label>
+
+          <label>
+            <input type="radio" name="cake-type" value="eggless">
+            Eggless (+₹40)
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>
+          Cake Size
+          <span class="tooltip">?
+            <span class="tooltip-text">
+              1 kg cake usually serves 6–8 people.
+            </span>
+          </span>
+        </label>
+        <div class="size-selector">
+          <button type="button" id="kg-minus">-</button>
+          <span id="kg-value">1</span> kg
+          <button type="button" id="kg-plus">+</button>
+        </div>
+        <small style="color:#777">1 kg serves approx 6–8 people</small>
+      </div>
+
+      <div class="form-group">
+        <label for="flavour">Cake Flavour</label>
+        <select id="flavour">
+          <option value="">Select Base</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="vanilla">Vanilla</option>
+          <option value="redvelvet">Red Velvet</option>
+          <option value="butterscotch">Butterscotch</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>
+          Toppings
+          <span class="tooltip">?
+            <span class="tooltip-text">
+              Toppings are decorative additions placed on top of the cake.
+            </span>
+          </span>
+        </label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" value="chips" disabled> Choco Chips (₹40)</label>
+          <label><input type="checkbox" value="nuts" disabled> Nuts (₹50)</label>
+          <label><input type="checkbox" value="fruits" disabled> Fruits (₹60)</label>
+          <label><input type="checkbox" value="sprinkles" disabled> Sprinkles (₹30)</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">
+          Message on Cake
+          <span class="tooltip">?
+            <span class="tooltip-text">
+              Short messages (10–20 characters) look best on cakes.
+            </span>
+          </span>
+        </label>
+        <input type="text" id="message" placeholder="Happy Birthday!" disabled>
+      </div>
+
+      <!-- PRICE DISPLAY -->
+      <div class="form-group">
+        <p><strong>Total Price: ₹<span id="custom-price">0</span></strong></p>
+      </div>
+
+      <!-- ADD TO CART BUTTON -->
+      <button type="button" id="add-custom-cake" class="btn-primary" disabled>
+        Add Custom Cake to Cart
+      </button>
+
+    </form>
+
+    <!-- PREVIEW -->
+    <div class="cake-preview">
+      <h3>Live Preview</h3>
+
+      <div class="cake-canvas">
+
+        <!-- PLACEHOLDER -->
+        <div id="cake-placeholder">Select Your Cake Base</div>
+
+        <!-- BASE -->
+        <img id="cake-base" src="" style="display:none;">
+
+        <!-- INDIVIDUAL TOPPING LAYERS -->
+        <img id="layer-chips" class="topping-layer">
+        <img id="layer-nuts" class="topping-layer">
+        <img id="layer-fruits" class="topping-layer">
+        <img id="layer-sprinkles" class="topping-layer">
+
+        <!-- TEXT -->
+        <div id="cake-text"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer">
+    <p>© 2026 Sweet Cravings Bakery | UID Course Project</p>
+  </div>
+</footer>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

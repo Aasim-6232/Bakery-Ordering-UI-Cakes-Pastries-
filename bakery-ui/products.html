@@ -1,0 +1,114 @@
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bakery Ordering UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="container nav-content">
+          <h2 class="logo">Sweet Cravings</h2>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Pre-Made Cakes</a></li>
+            <li><a href="custom.html">Custom Cake</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="content">
+
+      <!-- PAGE TITLE -->
+      <section class="page-header">
+        <div class="container">
+          <h1>Pre-Made Cakes & Pastries</h1>
+          <p>Choose from our freshly baked ready-to-order items</p>
+        </div>
+      </section>
+
+      <!-- CATEGORY FILTER -->
+      <section class="filter-section">
+        <div class="container filter-buttons">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="cake">Cakes</button>
+          <button class="filter-btn" data-category="pastry">Pastries</button>
+        </div>
+      </section>
+
+      <!-- PRODUCT GRID -->
+      <section class="products-section">
+        <div class="container product-grid">
+
+          <!-- PRODUCT CARD 1 -->
+          <div class="product-card cake">
+            <span class="badge">Bestseller</span>
+            <img src="images/cakes/chocolate-cake.jpg" alt="Chocolate Cake">
+            <h3>Chocolate Truffle Cake</h3>
+            <p>Rich dark chocolate layered delight</p>
+            <p class="price">₹499</p>
+            <button class="btn-primary add-to-cart"
+              data-id="cake1"
+              data-name="Chocolate Truffle Cake"
+              data-price="499"
+              data-image="images/cakes/chocolate-cake.jpg">
+              Order Now
+              </button>
+          </div>
+
+          <!-- PRODUCT CARD 2 -->
+          <div class="product-card pastry">
+            <span class="badge">Chef’s Choice</span>
+            <img src="images/pastries/croissant.jpg" alt="Croissant">
+            <h3>Butter Croissant</h3>
+            <p>Flaky and freshly baked</p>
+            <p class="price">₹99</p>
+            <button class="btn-primary add-to-cart"
+              data-id="pastry1"
+              data-name="Butter Croissant"
+              data-price="99"
+              data-image="images/pastries/croissant.jpg">
+              Order Now
+            </button>
+          </div>
+
+          <!-- PRODUCT CARD 3 -->
+          <div class="product-card cake">
+            <img src="images/cakes/red-velvet.jpg" alt="Red Velvet Cake">
+            <h3>Red Velvet Cake</h3>
+            <p>Classic cream cheese frosting</p>
+            <p class="price">₹549</p>
+            <button class="btn-primary add-to-cart"
+              data-id="cake2"
+              data-name="Red Velvet Cake"
+              data-price="549"
+              data-image="images/cakes/red-velvet.jpg">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>© 2026 Sweet Cravings Bakery | UID Course Project</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>

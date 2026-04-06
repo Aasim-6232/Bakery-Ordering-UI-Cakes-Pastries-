@@ -1,0 +1,195 @@
+<!-- checkout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout | Sweet Cravings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+<header>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <h2 class="logo">Sweet Cravings <span id="cart-count">(0)</span></h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Pre-Made Cakes</a></li>
+        <li><a href="custom.html">Custom Cake</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="content">
+
+<section class="page-header">
+  <div class="container">
+    <h1>Checkout</h1>
+    <p>Complete your order</p>
+  </div>
+</section>
+
+<section class="checkout-section">
+  <div class="container checkout-layout">
+
+    <!-- ORDER SUMMARY -->
+    <div class="checkout-box">
+      <h3>Order Summary</h3>
+      <ul id="checkout-items"></ul>
+
+      <div class="checkout-total">
+        <strong>Total:</strong> ₹<span id="checkout-total">0</span>
+      </div>
+    </div>
+
+    <!-- CUSTOMER + PAYMENT -->
+    <div class="checkout-box">
+
+      <h3>Customer Details</h3>
+      <div class="form-group">
+        <input type="text" placeholder="Full Name">
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="phone" placeholder="Phone Number" maxlength="10">
+        <small id="phone-error" style="color:red; display:none;">Only numbers allowed</small>
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="Delivery Address">
+      </div>
+
+      <h3>Payment Method</h3>
+
+      <div class="payment-options">
+        <label><input type="radio" name="payment" checked> UPI</label>
+        <label><input type="radio" name="payment"> Credit / Debit Card</label>
+        <label><input type="radio" name="payment"> Cash on Delivery</label>
+      </div>
+
+      <button class="btn-primary full-width" id="place-order-btn">
+        Place Order
+      </button>
+
+      <div id="order-confirmation" style="display:none; margin-top:20px; text-align:center;">
+        <h3>🎉 Order Placed Successfully!</h3>
+        <p>Your delicious treats will be delivered soon.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer">
+    <p>© 2026 Sweet Cravings Bakery | UID Course Project</p>
+  </div>
+</footer>
+
+</div>
+
+<script src="js/script.js"></script>
+
+<script>
+/* =========================
+   CHECKOUT PAGE LOGIC
+========================= */
+
+function renderCheckout() {
+  const list = document.getElementById('checkout-items');
+  const totalEl = document.getElementById('checkout-total');
+
+  if (!list) return;
+
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  list.innerHTML = '';
+
+  let total = 0;
+
+  cart.forEach(item => {
+    const li = document.createElement('li');
+    const itemTotal = item.price * item.qty;
+    total += itemTotal;
+
+    li.innerHTML = `
+      ${item.name} × ${item.qty}
+      <span>₹${itemTotal}</span>
+    `;
+    list.appendChild(li);
+  });
+
+  totalEl.innerText = total;
+}
+
+renderCheckout();
+
+/* PLACE ORDER (SIMULATION) */
+const placeOrderBtn = document.getElementById('place-order-btn');
+
+if (placeOrderBtn) {
+  placeOrderBtn.addEventListener('click', () => {
+
+    const nameInput = document.querySelector('input[placeholder="Full Name"]');
+    const phoneInput = document.querySelector('input[placeholder="Phone Number"]');
+    const addressInput = document.querySelector('input[placeholder="Delivery Address"]');
+
+    const name = nameInput.value.trim();
+    const phone = phoneInput.value.trim();
+    const address = addressInput.value.trim();
+
+    // NAME VALIDATION
+    if (name.length < 3) {
+      alert("Name must be at least 3 characters long.");
+      return;
+    }
+
+    // PHONE VALIDATION (only digits + exactly 10 digits)
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) {
+      alert("Phone number must be exactly 10 digits.");
+      return;
+    }
+
+    // ADDRESS VALIDATION
+    if (address.length < 3) {
+      alert("Address must be at least 3 characters long.");
+      return;
+    }
+
+    // SUCCESS
+    document.getElementById('order-confirmation').style.display = 'block';
+    localStorage.removeItem('cart');
+    updateCartCount();
+  });
+}
+
+const phoneInput = document.getElementById("phone");
+const phoneError = document.getElementById("phone-error");
+
+if (phoneInput) {
+  phoneInput.addEventListener("input", () => {
+
+    // If user types anything other than numbers
+    if (/[^0-9]/.test(phoneInput.value)) {
+      phoneError.style.display = "block";
+    } else {
+      phoneError.style.display = "none";
+    }
+
+    // Remove non-numeric characters automatically
+    phoneInput.value = phoneInput.value.replace(/[^0-9]/g, '');
+  });
+}
+</script>
+
+</body>
+</html>

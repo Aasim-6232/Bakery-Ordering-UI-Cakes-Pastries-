@@ -1,0 +1,83 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart | Sweet Cravings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+<header>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <h2 class="logo">Sweet Cravings <span id="cart-count">(0)</span></h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Pre-Made Cakes</a></li>
+        <li><a href="custom.html">Custom Cake</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="content">
+
+<section class="page-header">
+  <div class="container">
+    <h1>Your Cart</h1>
+    <p>Review your selected items</p>
+  </div>
+</section>
+
+<section class="cart-section">
+  <div class="container">
+
+    <div class="cart-layout">
+
+      <div class="cart-list">
+        <h2>Your Items</h2>
+        <ul id="cart-items"></ul>
+      </div>
+
+      <div class="cart-summary-box">
+        <h3>Order Summary</h3>
+
+        <div class="summary-row">
+          <span>Total Items</span>
+          <span id="cart-count-display">0</span>
+        </div>
+
+        <div class="summary-row total">
+          <span>Total Amount</span>
+          <span>₹<span id="cart-total">0</span></span>
+        </div>
+
+        <a href="checkout.html" class="btn-primary full-width">
+          Proceed to Checkout
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer">
+    <p>© 2026 Sweet Cravings Bakery | UID Course Project</p>
+  </div>
+</footer>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
