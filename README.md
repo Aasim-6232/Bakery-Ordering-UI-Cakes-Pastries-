@@ -52,6 +52,7 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 
 ## 📂 Project Structure
 
+```
 .
 ├── index.html          # Homepage with cake navigation
 ├── products.html       # Pre-made cakes and pastries
@@ -63,8 +64,7 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 ├── js/
 │   └── script.js       # Main JavaScript logic
 └── images/             # Images for cakes, UI, etc.
-
-
+```
 
 ---
 
