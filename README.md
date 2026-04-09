@@ -1,6 +1,6 @@
 # 🍰 Sweet Cravings – Bakery Ordering UI
 
-An interactive bakery ordering web application built using **HTML, CSS, and JavaScript**. This project simulates an online cake ordering system where users can browse products, customize cakes, manage their cart, and complete a checkout process.
+An interactive bakery ordering web application built using **HTML, CSS, and JavaScript**. This project simulates an online cake ordering system where users can browse products, customize cakes, manage the cart, and complete a checkout process.
 
 ---
 
