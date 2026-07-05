@@ -6,11 +6,11 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 
 ## ⦿ Features
 
-### ○ Product Browsing
+### ➼ Product Browsing
 - View pre-made cakes and pastries
 - Filter products by category (Cakes / Pastries)
 
-### ○ Custom Cake Builder
+### ➼ Custom Cake Builder
 - Select cake flavour
 - Choose toppings (chips, nuts, fruits, sprinkles)
 - Select cake type (egg / eggless)
@@ -19,13 +19,13 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 - Live cake preview
 - Dynamic price calculation
 
-### ○ Cart System
+### ➼ Cart System
 - Add / remove items
 - Increase or decrease quantity
 - Displays total items and total cost
 - Persistent storage using **LocalStorage**
 
-### ○ Checkout System
+### ➼ Checkout System
 - Order summary display
 - Customer input form
 - Input validation:
@@ -33,7 +33,7 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
   - Name & address (minimum length validation)
 - Simulated order confirmation
 
-### ○ UI/UX Design
+### ➼ UI/UX Design
 - Creative cake-themed homepage navigation
 - Responsive layout
 - Clean and user-friendly interface
