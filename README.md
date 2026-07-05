@@ -1,16 +1,16 @@
-# 🍰 Sweet Cravings – Bakery Ordering UI
+# Sweet Cravings – Bakery Ordering UI
 
 An interactive bakery ordering web application built using **HTML, CSS, and JavaScript**. This project simulates an online cake ordering system where users can browse products, customize cakes, manage the cart, and complete a checkout process.
 
 ---
 
-## ✨ Features
+## ⦿ Features
 
-### 🛍️ Product Browsing
+### ○ Product Browsing
 - View pre-made cakes and pastries
 - Filter products by category (Cakes / Pastries)
 
-### 🎂 Custom Cake Builder
+### ○ Custom Cake Builder
 - Select cake flavour
 - Choose toppings (chips, nuts, fruits, sprinkles)
 - Select cake type (egg / eggless)
@@ -19,13 +19,13 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 - Live cake preview
 - Dynamic price calculation
 
-### 🛒 Cart System
+### ○ Cart System
 - Add / remove items
 - Increase or decrease quantity
 - Displays total items and total cost
 - Persistent storage using **LocalStorage**
 
-### 💳 Checkout System
+### ○ Checkout System
 - Order summary display
 - Customer input form
 - Input validation:
@@ -33,7 +33,7 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
   - Name & address (minimum length validation)
 - Simulated order confirmation
 
-### 🎨 UI/UX Design
+### ○ UI/UX Design
 - Creative cake-themed homepage navigation
 - Responsive layout
 - Clean and user-friendly interface
@@ -41,7 +41,7 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 
 ---
 
-## 🛠️ Technologies Used
+## ⦿ Technologies Used
 
 - **HTML5** – Structure of the application  
 - **CSS3** – Styling, layout, and animations  
@@ -50,7 +50,7 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 
 ---
 
-## 📂 Project Structure
+## ⦿ Project Structure
 
 ```
 .
@@ -68,7 +68,7 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 
 ---
 
-## 🚀 How to Run the Project
+## ⦿ How to Run the Project
 
 1. Download or clone the repository: https://github.com/Aasim-6232/Bakery-Ordering-UI-Cakes-Pastries
 
@@ -78,7 +78,7 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 
 ---
 
-## 🌟 Key Highlights
+## ⦿ Key Highlights
 
 - Real-time **custom cake preview system**
 - Fully functional **cart without backend**
@@ -88,7 +88,7 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 
 ---
 
-## 📌 Future Improvements
+## ⦿ Future Improvements
 
 - Backend integration for real orders
 - Payment gateway integration
@@ -97,12 +97,12 @@ An interactive bakery ordering web application built using **HTML, CSS, and Java
 
 ---
 
-## 👨‍💻 Developed As
+## ⦿ Developed As
 
 This project was developed as part of a **User Interface Design (UID) course**, focusing on front-end development and user experience design.
 
 ---
 
-## 📜 License
+## ⦿ License
 
 This project is for educational purposes.
